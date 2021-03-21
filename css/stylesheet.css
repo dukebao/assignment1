@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+body{
+
+    background-color: #ebbcba;
+    font-family: 'The Girl Next Door', cursive;
+}
+    
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color:#575279;
+    background-color: #f2e9de;
+}
+
+nav ul li {
+    display: inline;
+    /*justify-content: space-around;*/
+    text-align: justify;
+    padding: 5px;
+}
+
+
+/*
+ @media screen and (min-width:600px)
+ {
+     .container{
+         display: grid;
+         grid-template-columns:  1fr 5fr;
+         gap:2px;
+     }
+     nav{
+        text-align: center;
+        flex-direction: column
+     }
+         
+       
+
+    
+ }
+
+
+ .one{
+    background-color:pink;
+    border: brown 2px solid;
+ }
+ */
