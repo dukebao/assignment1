@@ -12,19 +12,19 @@ body{
 }
     
 nav {
-    display: flex;
-    justify-content: space-evenly;
     text-align: center;
+   
     color:#575279;
     background-color: #f2e9de;
     
 }
 
 nav ul li {
-    display: inline;
+    
     /*justify-content: space-around;*/
     text-align: justify;
-    padding: 5px;
+    padding: 1px;
+    
 }
 header {
     text-align: center;
@@ -34,7 +34,11 @@ header p {
     padding: 10px;
 
 }
+h3
+{
+  font-size: 150%;
 
+}
 footer
 {
     text-align: center;
@@ -110,27 +114,53 @@ textarea{
 {
     grid-row: 5;
 }
-/*
+
  @media screen and (min-width:600px)
  {
-     .container{
-         display: grid;
-         grid-template-columns:  1fr 5fr;
-         gap:2px;
+    .container{
+        display: grid;
+        grid-template-columns:  1fr 4fr;
+        grid-template-rows: 1fr;
      }
-     nav{
+    .myNotes{
+      text-align: left;
+      grid-column: 1;
+      grid-row: 1/4;
+     
+     }
+
+    .second_container{
+
+        grid-column: 2/3;
+     }
+    .file_handle
+    {
+        grid-column: 2/3;
+    }
+    footer{
+        grid-column: 2/3;
+    }
+    nav {
+        
         text-align: center;
-        flex-direction: column
-     }
-         
+        color:#575279;
+        background-color: #f2e9de;
+        
+    }
+    nav ul li {
        
-
+        /*justify-content: space-around;*/
+   
+        padding: 5px;
+    }
+    textarea{
     
+        max-width: 95%;
+        width: 800px;
+        height: 300px;
+    }
+
  }
 
 
- .one{
-    background-color:pink;
-    border: brown 2px solid;
- }
- */
+
