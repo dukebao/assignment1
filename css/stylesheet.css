@@ -25,8 +25,55 @@ nav ul li {
     text-align: justify;
     padding: 5px;
 }
+header {
+    text-align: center;
+}
+header p {
+    text-align: right;
+    padding: 10px;
 
+}
 
+footer
+{
+    text-align: center;
+}
+
+.note {
+    display: block;
+    text-align: center;
+    
+}
+textarea{
+    background-color: #FAF4ED;
+    color: #575279;
+    font-family: 'The Girl Next Door', cursive;
+    max-width: 95%;
+    
+}
+
+.basic_buttom{
+    border: 0;
+    line-height: 1.5;
+    padding: 0 20px;
+    font-size: 1em;
+    text-align: center;
+    color:#393552;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color:#c4a7e7;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.darktheme.basic_buttom
+{
+    background-color:#286983;
+    color: #fff;
+}
 /*
  @media screen and (min-width:600px)
  {
