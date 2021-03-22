@@ -51,7 +51,13 @@ textarea{
     max-width: 95%;
     
 }
-
+.setting 
+{
+   display: flex;
+   justify-content: space-between;
+   padding-left: 5%;
+    padding-right: 5%;
+}
 .basic_buttom{
     border: 0;
     line-height: 1.5;
@@ -59,20 +65,36 @@ textarea{
     font-size: 1em;
     text-align: center;
     color:#393552;
-    text-shadow: 1px 1px 1px #000;
+   
     border-radius: 10px;
     background-color:#c4a7e7;
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
                                       rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
 }
 .darktheme.basic_buttom
 {
     background-color:#286983;
     color: #fff;
+}
+
+.file_handle
+{
+    text-align: right;
+    
+    padding-right: 5%;
+}
+.save
+{
+    color: white;
+    background-color: #3e8fb0;
+}
+.cancel
+{
+    color: white;
+    background-color: #b4637a;
 }
 /*
  @media screen and (min-width:600px)
