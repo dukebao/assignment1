@@ -83,7 +83,6 @@ textarea{
 .file_handle
 {
     text-align: right;
-    
     padding-right: 5%;
 }
 .save
@@ -96,7 +95,7 @@ textarea{
     color: white;
     background-color: #b4637a;
 }
-/*
+
  @media screen and (min-width:600px)
  {
      .container{
@@ -119,4 +118,4 @@ textarea{
     background-color:pink;
     border: brown 2px solid;
  }
- */
+ 
