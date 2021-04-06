@@ -71,7 +71,7 @@ textarea{
     font-size: 1em;
     text-align: center;
     color:#393552;
-   
+    font-family: 'The Girl Next Door', cursive;
     border-radius: 10px;
     background-color:#c4a7e7;
     background-image: linear-gradient(to top left,
@@ -105,10 +105,11 @@ textarea{
 .container{
     display: grid;
     padding:2px;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
     gap:2px;
     grid-auto-rows: minmax(5px, auto);
+    
 }
 .myNotes
 {
@@ -120,19 +121,25 @@ textarea{
     .container{
         display: grid;
         grid-template-columns:  1fr 4fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: repeat(6 , auto);
      }
     .myNotes{
       text-align: left;
       grid-column: 1;
-      grid-row: 1/4;
+      grid-row: 1/-1;
      
      }
 
-    .second_container{
+    .headline{
 
         grid-column: 2/3;
      }
+    .note{
+        grid-column: 2;
+    }
+    .setting{
+        grid-column: 2;
+    }
     .file_handle
     {
         grid-column: 2/3;
