@@ -6,7 +6,7 @@
 
 
 body{
-
+    height: 100vh;
     background-color: #ebbcba;
     font-family: 'The Girl Next Door', cursive;
 }
@@ -50,12 +50,14 @@ footer
     
 }
 textarea{
+    
     background-color: #FAF4ED;
     color: #575279;
     font-family: 'The Girl Next Door', cursive;
-    max-width: 95%;
-   width: 350px;
-  height: 200px;
+    max-height: 95vh;
+    max-width: 95vh;
+    width: 42vh;
+    height: 20vh;
 }
 .setting 
 {
@@ -113,15 +115,16 @@ textarea{
 }
 .myNotes
 {
-    grid-row: 5;
+    grid-row: 2;
 }
 
  @media screen and (min-width:600px)
  {
     .container{
+        height: 100vh;
         display: grid;
         grid-template-columns:  1fr 4fr;
-        grid-template-rows: repeat(6 , auto);
+        grid-template-rows: 4fr auto;
      }
     .myNotes{
       text-align: left;
@@ -130,6 +133,7 @@ textarea{
      
      }
 
+    
     .headline{
 
         grid-column: 2/3;
@@ -163,8 +167,9 @@ textarea{
     textarea{
     
         max-width: 95%;
-        width: 800px;
-        height: 300px;
+        max-height: 45vh;
+        width: 95%;
+        height: 45vh;
     }
 
  }
