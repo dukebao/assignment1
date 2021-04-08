@@ -1,6 +1,40 @@
 
+/*this piece of css script handles dark mode styling
+*/
+.container.darkmode{
+    background-color: darkslategray;
+    color:cornsilk;
+}
+.basic_buttom.darkmode{
+    background-color: honeydew;
+}
+.myNotes.darkmode{
+    background-color: indigo;
+    color:lightblue;
+}
 
+.darkmode{
+    background-color: gray;
+}
+.save.darkmode{
+    background-color: green;
+}
+.cancel.darkmode{
+    background-color: black;
+}
+/*this changes the */
 
+a:link{
+    color:lightpink; 
+}
+a:visited{
+    color:lightsalmon;
+}
+.textarea.darkmode{
+    color:cornsilk;
+}
+::placeholder{
+    color:cornsilk;}
 
 
 
@@ -58,6 +92,7 @@ textarea{
     max-width: 95vh;
     width: 70vh;
     height: 50vh;
+    font-size:larger;
 }
 .setting 
 {
