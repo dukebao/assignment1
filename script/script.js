@@ -2,7 +2,14 @@
 use toggle 
 if toggle on , apply different styling to body 
 
+for line line in html 
+change word "darkmode to lightmode"
+//the idea is once darkmode string is change to lightmode the 
+default styling s
+
+
 replace dark mode bottom with light theme buttom 
+//some kind of onclick funciton
 
 */
 

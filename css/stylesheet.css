@@ -1,6 +1,5 @@
-
+/*
 /*this piece of css script handles dark mode styling
-*/
 .container.darkmode{
     background-color: darkslategray;
     color:cornsilk;
@@ -22,7 +21,7 @@
 .cancel.darkmode{
     background-color: black;
 }
-/*this changes the */
+
 
 a:link{
     color:lightpink; 
@@ -35,18 +34,20 @@ a:visited{
 }
 ::placeholder{
     color:cornsilk;}
-
-
+.body.darkmode{
+    background-color: darkslategray;
+}
+*/
 
 
 body{
     background-color: #ebbcba;
-    font-family: 'The Girl Next Door', cursive;
+    padding: 0;
     margin: 0;
 }
     
 nav {
-    text-align: center;
+    text-align: right;
    
     color:#575279;
     background-color: #f2e9de;
@@ -67,6 +68,9 @@ header p {
     text-align: right;
     padding: 10px;
 
+}
+h2{
+    text-align: center;
 }
 h3
 {
@@ -140,6 +144,9 @@ textarea{
     background-color: #b4637a;
 }
 .container{
+    background-color: #ebbcba;
+    font-family: 'The Girl Next Door', cursive;
+    margin: 0;
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: auto ;
