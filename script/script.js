@@ -97,11 +97,13 @@ function CreateNotesNavigation(){
         if (note_object.title ==''){
             note_object.title = `Default Note_name ${note_array.length}`
         }
+     
+        }
         let note_nav = document.createElement("li");
         note_nav.textContent=note_array[0].title;
         document.getElementById("note_index").appendChild(note_nav);
     }
-}
+
 
 function write_to_array(){
     if ((document.getElementById("textarea").value) != '')
@@ -125,15 +127,23 @@ document.getElementById("save").addEventListener("click",write_to_array);
 document.getElementById("save").addEventListener("click",CreateNotesNavigation);
 
 
-
-
-
 /*this piece of java script handles when user click on nav 
 if content in nav is clicked 
     look for object_name in object arry
     display body in textbox 
-
-
-
-
 */
+
+document.getElementById("note_index").addEventListener("click",display_body_to_textbox)
+
+function display_body_to_textbox(clicked){
+    let child_text = clicked.target.innerHTML;
+    console.log("you have found the child !",child_text);
+    for (item in note_array){
+        //console.log(note_array[item].title)
+        if (child_text === note_array[item].title){
+            console.log(note_array[item].body);
+            document.getElementById("textarea").value= note_array[item].body;
+        }
+    }
+   
+}
