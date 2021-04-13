@@ -1,3 +1,13 @@
+/*declare all the variables here */
+
+const dark_light_btn = document.getElementById("dark_light_button");
+const body_btn = document.getElementById("body");
+const container_btn = document.getElementById("container");
+const myNotes_btn = document.getElementById("myNotes");
+const textarea_btn = document.getElementById("textarea");
+const save_btn = document.getElementById("save");
+const cancel_btn = document.getElementById("cancel");
+const setting_btn =document.getElementById("setting");
 /* This piece of javascript handles dark and light mode
 use toggle 
 if toggle on , apply different styling to body 
@@ -5,29 +15,32 @@ replace dark mode bottom with light theme buttom
 //some kind of onclick funciton*/
 
 
-document.getElementById("dark_light_button").addEventListener("click",changeword);
 
+
+
+
+dark_light_btn.addEventListener("click",changeword);
 function changeword(){
     if (document.getElementById("dark_light_button").innerText === "Dark Theme")
     {
-        document.getElementById("body").className += " darkmode";
-        document.getElementById("container").className += " darkmode";
-        document.getElementById("myNotes").className += " darkmode";
-        document.getElementById("textarea").className += " darkmode";
-        document.getElementById("save").className += " darkmode";
-        document.getElementById("cancel").className += " darkmode";
-        document.getElementById("setting").className += " darkmode";
-        document.getElementById("dark_light_button").innerText = "Light Theme";
+        body_btn.className += " darkmode";
+        container_btn.className += " darkmode";
+        myNotes_btn.className += " darkmode";
+        textarea_btn.className += " darkmode";
+        save_btn.className += " darkmode";
+        cancel_btn.className += " darkmode";
+        setting_btn.className += " darkmode";
+        dark_light_btn.innerText = "Light Theme";
 
     } else {
-        document.getElementById("body").classList.remove("darkmode");
-        document.getElementById("container").classList.remove("darkmode");
-        document.getElementById("myNotes").classList.remove("darkmode");
-        document.getElementById("textarea").classList.remove("darkmode");
-        document.getElementById("save").classList.remove("darkmode");
-        document.getElementById("cancel").classList.remove("darkmode");
-        document.getElementById("setting").classList.remove("darkmode");
-        document.getElementById("dark_light_button").innerText = "Dark Theme";}
+        body_btn.classList.remove("darkmode");
+        container_btn.classList.remove("darkmode");
+        myNotes_btn.classList.remove("darkmode");
+        textarea_btn.classList.remove("darkmode");
+        save_btn.classList.remove("darkmode");
+        cancel_btn.classList.remove("darkmode");
+        setting_btn.classList.remove("darkmode");
+        dark_light_btn.innerText = "Dark Theme";}
 }
 
 
@@ -39,7 +52,7 @@ note and file_handle object with be hidden
 */
 
 
-document.getElementById("cancel").addEventListener("click",hide_elements);
+cancel_btn.addEventListener("click",hide_elements);
 
 function hide_elements(){
     console.log("cancel is called")
