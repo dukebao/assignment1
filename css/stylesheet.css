@@ -1,5 +1,5 @@
 /*
-/*this piece of css script handles dark mode styling
+/*this piece of css script handles dark mode styling*/
 .container.darkmode{
     background-color: darkslategray;
     color:cornsilk;
@@ -21,7 +21,12 @@
 .cancel.darkmode{
     background-color: black;
 }
-
+.setting.darkmode{
+    background-color: darkslategray;
+}
+/*
+this piece of css styling handles color of link inside 
+*/
 
 a:link{
     color:lightpink; 
@@ -30,22 +35,22 @@ a:visited{
     color:lightsalmon;
 }
 .textarea.darkmode{
-    color:cornsilk;
+    color:gray;
 }
 ::placeholder{
-    color:cornsilk;}
+    color:black;}
+
 .body.darkmode{
     background-color: darkslategray;
 }
-*/
 
-
-body{
+body.lightmode{
     background-color: #ebbcba;
     padding: 0;
     margin: 0;
 }
     
+
 nav {
     text-align: right;
    
@@ -159,7 +164,7 @@ textarea{
 
  @media screen and (min-width:600px)
  {
-    .container{
+    .container.lightmode{
         height: 100vh;
         display: grid;
         grid-template-columns:  1fr 4fr;
