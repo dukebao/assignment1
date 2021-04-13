@@ -1,18 +1,67 @@
+/*
+/*this piece of css script handles dark mode styling*/
+.container.darkmode{
+    background-color: darkslategray;
+    color:cornsilk;
+}
+.basic_buttom.darkmode{
+    background-color: honeydew;
+}
+.myNotes.darkmode{
+    background-color: indigo;
+    color:lightblue;
+}
 
+.darkmode{
+    background-color: gray;
+}
+.save.darkmode{
+    background-color: green;
+}
+.cancel.darkmode{
+    background-color: black;
+}
+.setting.darkmode{
+    background-color: darkslategray;
+}
+/*
+this piece of css styling handles color of link inside 
+*/
 
+a:link{
+    color:lightpink; 
+}
+a:visited{
+    color:rgb(211, 98, 54);
+}
+.textarea.darkmode{
+    color:gray;
+}
+::placeholder{
+    color:black;}
 
+.body.darkmode{
+    background-color: darkslategray;
+}
 
+<<<<<<< HEAD
 
 
 
 body{
     background-color: #ebbcba;
     font-family: 'The Girl Next Door', cursive;
+=======
+body.lightmode{
+    background-color: #ebbcba;
+    padding: 0;
+>>>>>>> add_javascript
     margin: 0;
 }
     
+
 nav {
-    text-align: center;
+    text-align: right;
    
     color:#575279;
     background-color: #f2e9de;
@@ -33,6 +82,9 @@ header p {
     text-align: right;
     padding: 10px;
 
+}
+h2{
+    text-align: center;
 }
 h3
 {
@@ -58,6 +110,10 @@ textarea{
     max-width: 95vh;
     width: 70vh;
     height: 50vh;
+<<<<<<< HEAD
+=======
+    font-size:larger;
+>>>>>>> add_javascript
 }
 .setting 
 {
@@ -105,6 +161,9 @@ textarea{
     background-color: #b4637a;
 }
 .container{
+    background-color: #ebbcba;
+    font-family: 'The Girl Next Door', cursive;
+    margin: 0;
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: auto ;
@@ -117,7 +176,7 @@ textarea{
 
  @media screen and (min-width:600px)
  {
-    .container{
+    .container.lightmode{
         height: 100vh;
         display: grid;
         grid-template-columns:  1fr 4fr;
