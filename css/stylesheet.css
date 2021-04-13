@@ -44,18 +44,9 @@ a:visited{
     background-color: darkslategray;
 }
 
-<<<<<<< HEAD
-
-
-
-body{
-    background-color: #ebbcba;
-    font-family: 'The Girl Next Door', cursive;
-=======
 body.lightmode{
     background-color: #ebbcba;
     padding: 0;
->>>>>>> add_javascript
     margin: 0;
 }
     
