@@ -32,7 +32,7 @@ a:link{
     color:lightpink; 
 }
 a:visited{
-    color:lightsalmon;
+    color:rgb(211, 98, 54);
 }
 .textarea.darkmode{
     color:gray;

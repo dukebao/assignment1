@@ -76,7 +76,7 @@ function organize_text_area(){
 
 /* */
 var note_array = [];
-var note_object = {};
+var note_object = {title:"note one",body:"this is my first note"};
 /* this piece of javascript handles clicking on saved buttom
 if save is clicked and text area is not empty
     show alert and ask for title
@@ -90,10 +90,42 @@ doesn't do anything
 in nav 
     create a new object name as the first item of the string
 */
+note_array.push(note_object)
+
+function CreateNotesNavigation(){
+    if (note_object.body != '' ){
+        if (note_object.title ==''){
+            note_object.title = `Default Note_name ${note_array.length}`
+        }
+        let note_nav = document.createElement("li");
+        note_nav.textContent=note_array[0].title;
+        document.getElementById("note_index").appendChild(note_nav);
+    }
+}
+
+function write_to_array(){
+    if ((document.getElementById("textarea").value) != '')
+    {
+        var notetitle= prompt("Enter the Title of your notes!");
+        note_object.title=notetitle
+        note_object.body=(document.getElementById("textarea").value);
+        note_array.push(note_object)
+        console.log("note is saved!, this is the arry:",note_array);
+        document.getElementById("textarea").value= '';
+
+    }else {
+        note_object.title=''
+        note_object.body= ''
+        console.log("Thank god there is nothing to save ")
+    }
+    
+}
+
+document.getElementById("save").addEventListener("click",write_to_array);
+document.getElementById("save").addEventListener("click",CreateNotesNavigation);
 
 
-console.log("show me note_array!",note_array)
-console.log("show me note_object!",note_object)
+
 
 
 /*this piece of java script handles when user click on nav 
